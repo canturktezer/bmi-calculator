@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>BMI Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="metric">
+        <div class="inputs">
+          <label for="height">Height (cm):</label>
+          <input type="number" id="height" required />
+          <label for="weight">Weight (kg):</label>
+          <input type="number" id="weight" required />
+          <button id="calculate">Calculate BMI</button>
+          <div id="result" class="result"></div>
+        </div>
+      </div>
+      <div class="imperial">
+        <div class="inputs">
+          <label for="height-feet">Height (feet):</label>
+          <input type="number" id="height-feet" required />
+          <label for="height-inches">Height (inches):</label>
+          <input type="number" id="height-inches" required />
+          <label for="weight-lbs">Weight (lbs):</label>
+          <input type="number" id="weight-lbs" required />
+          <button id="calculate-lbs">Calculate BMI</button>
+          <div id="result-lbs" class="result"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
